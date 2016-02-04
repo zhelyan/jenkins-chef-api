@@ -16,4 +16,4 @@ To be extended/used by other plugins.
 
 ## Usage 
 
-See [ChefApiBuilder](../blob/master/src/main/java/com/which/hudson/plugins/chef/api/ChefApiBuilder.java)
+See [ChefApiBuilder](https://github.com/zhelyan/jenkins-chef-api/blob/master/src/main/java/com/which/hudson/plugins/chef/api/ChefApiBuilder.java)
