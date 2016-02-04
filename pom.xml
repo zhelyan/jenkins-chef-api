@@ -11,7 +11,7 @@
     <artifactId>chef-api</artifactId>
     <packaging>hpi</packaging>
     <name>Chef api plugin</name>
-    <version>1.1.2</version>
+    <version>1.2.0</version>
 
     <properties>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -39,12 +39,12 @@
         <dependency>
             <groupId>org.apache.jclouds.api</groupId>
             <artifactId>chef</artifactId>
-            <version>1.8.0</version>
+            <version>1.9.2</version>
         </dependency>
         <dependency>
             <groupId>org.apache.jclouds</groupId>
             <artifactId>jclouds-core</artifactId>
-            <version>1.8.0</version>
+            <version>1.9.2</version>
         </dependency>
         <!--<dependency>-->
             <!--<groupId>org.apache.jclouds</groupId>-->
