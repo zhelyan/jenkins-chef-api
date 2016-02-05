@@ -119,7 +119,7 @@ public class ChefCredentialsImpl extends BaseCredentials implements ChefCredenti
             ChefConfig knifeConfig;
             try {
                 knifeConfig = ChefConfigParser.parse(new File(knifeConfigPath));
-                ChefApi chefApi = ChefApiBuilder.INSTANCE.build(knifeConfig);
+                ChefApi chefApi = ChefApiBuilder.build(knifeConfig, null);
                 chefApi.listEnvironments();
             } catch (Exception e) {
                 return FormValidation.error(e.getMessage());

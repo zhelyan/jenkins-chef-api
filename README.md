@@ -12,7 +12,8 @@ To be extended/used by other plugins.
 
 * Go to `<JENKINS>/credential-store/domain/_/` and click `Add credentials`
 * Choose `Opscode Chef configuration`
-* Add the absolute path to a `knife.rb` or `client.rb` file. (You can delete these + any `.pem` keys once the credential has been added successfully)
+* Add the absolute path to a `knife.rb` or `client.rb` for the **admin** Chef server client you want to register. 
+* You can delete these + any `.pem` keys once the credential has been added successfully
 
 ## Usage 
 
