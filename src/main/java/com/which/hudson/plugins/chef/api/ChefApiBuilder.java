@@ -1,17 +1,14 @@
 package com.which.hudson.plugins.chef.api;
 
-import com.google.inject.Module;
-import com.which.hudson.plugins.chef.credentials.ChefCredentials;
-import com.which.hudson.plugins.chef.util.ChefConfigParser;
 import com.cloudbees.plugins.credentials.CredentialsProvider;
 import com.cloudbees.plugins.credentials.domains.DomainRequirement;
+import com.which.hudson.plugins.chef.credentials.ChefCredentials;
+import com.which.hudson.plugins.chef.util.ChefConfigParser;
 import hudson.security.ACL;
 import jenkins.model.Jenkins;
 import org.jclouds.ContextBuilder;
 import org.jclouds.chef.ChefApi;
 import org.jclouds.chef.ChefApiMetadata;
-import org.jclouds.chef.ChefContext;
-import org.jclouds.rest.config.SetCaller;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,6 +19,10 @@ import java.util.List;
  * Builds {@link ChefApi} object from knife.rb, {@link ChefConfig} object or by passing the details directly
  */
 public class ChefApiBuilder {
+
+    private ChefApiBuilder() {
+        super();
+    }
 
     /**
      * @param knifeConfig knife.rb
@@ -49,7 +50,7 @@ public class ChefApiBuilder {
     /**
      * Builds the API using the dedicated {@link ChefConfig} config wrapper
      *
-     * @param config {@link ChefConfig}
+     * @param config  {@link ChefConfig}
      * @param modules If no Modules are specified, the default logging and http transports will be installed.
      * @return {@link ChefApi}
      */
@@ -63,7 +64,7 @@ public class ChefApiBuilder {
      * for this credential's Chef server
      *
      * @param credentialID {@link ChefCredentials}
-     * @param modules If no Modules are specified, the default logging and http transports will be installed.
+     * @param modules      If no Modules are specified, the default logging and http transports will be installed.
      * @return {@link ChefApi}
      */
     public static ChefApi build(String credentialID, List<com.google.inject.Module> modules) throws ConfigurationException {

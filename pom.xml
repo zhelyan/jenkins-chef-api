@@ -11,7 +11,7 @@
     <artifactId>chef-api</artifactId>
     <packaging>hpi</packaging>
     <name>Chef api plugin</name>
-    <version>1.3.0</version>
+    <version>1.3.1</version>
 
     <properties>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>

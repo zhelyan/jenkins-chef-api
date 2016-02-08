@@ -1,13 +1,13 @@
 package com.which.hudson.plugins.chef.credentials.impl;
 
-import com.which.hudson.plugins.chef.api.ChefApiBuilder;
-import com.which.hudson.plugins.chef.api.ChefConfig;
-import com.which.hudson.plugins.chef.credentials.ChefCredentials;
-import com.which.hudson.plugins.chef.util.ChefConfigParser;
 import com.cloudbees.plugins.credentials.BaseCredentials;
 import com.cloudbees.plugins.credentials.CredentialsDescriptor;
 import com.cloudbees.plugins.credentials.CredentialsScope;
 import com.cloudbees.plugins.credentials.common.IdCredentials;
+import com.which.hudson.plugins.chef.api.ChefApiBuilder;
+import com.which.hudson.plugins.chef.api.ChefConfig;
+import com.which.hudson.plugins.chef.credentials.ChefCredentials;
+import com.which.hudson.plugins.chef.util.ChefConfigParser;
 import edu.umd.cs.findbugs.annotations.CheckForNull;
 import edu.umd.cs.findbugs.annotations.NonNull;
 import hudson.Extension;
@@ -18,7 +18,6 @@ import org.jvnet.localizer.Localizable;
 import org.jvnet.localizer.ResourceBundleHolder;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.QueryParameter;
-import org.kohsuke.stapler.bind.JavaScriptMethod;
 
 import java.io.File;
 

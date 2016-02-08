@@ -1,11 +1,11 @@
 package com.which.hudson.plugins.chef.credentials;
 
-import com.which.hudson.plugins.chef.api.ChefConfig;
-import com.which.hudson.plugins.chef.credentials.impl.ChefCredentialsImpl;
 import com.cloudbees.plugins.credentials.CredentialsNameProvider;
 import com.cloudbees.plugins.credentials.NameWith;
 import com.cloudbees.plugins.credentials.common.Recommended;
 import com.cloudbees.plugins.credentials.common.StandardCredentials;
+import com.which.hudson.plugins.chef.api.ChefConfig;
+import com.which.hudson.plugins.chef.credentials.impl.ChefCredentialsImpl;
 import edu.umd.cs.findbugs.annotations.NonNull;
 import org.jvnet.localizer.Localizable;
 import org.jvnet.localizer.ResourceBundleHolder;
