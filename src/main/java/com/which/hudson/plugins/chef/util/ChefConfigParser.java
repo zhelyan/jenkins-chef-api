@@ -66,7 +66,7 @@ public class ChefConfigParser {
     }
 
     private static String normalizedValue(String value) {
-        return value.replaceAll("\"", "");
+        return value.replaceAll("\"|'", "");
     }
 
     private static String getClientKey(File configFile, String value) throws ParseConfigException {
